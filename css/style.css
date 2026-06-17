@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-padrao: #707070;
+    --background-section: whitesmoke;
+    --cor-barra: #30608d;
+}
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: var(--cor-padrao);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 16px;
+    margin: 20px;
+    font-family: "Raleway", sans-serif;
+}
+
+.left, .experience, .graduation{
+    background-color: var(--background-section);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.experience, .graduation {
+    padding: 10px;
+}
+
+.img-left {
+    position: relative;
+}
+
+.img-left .avatar {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.img-left h1 {
+    position: absolute;
+    bottom: 0;
+    color: #000000;
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile, .skills, .languages {
+    padding: 16px;
+    line-height: 20px;
+}
+
+.left{
+    box-shadow: 5px 5px 10px rgb(56, 56, 56);
+}
+
+.right {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.data {
+    color: var(--cor-padrao);
+}
+
+ul {
+    list-style: none;
+}
+
+.progress {
+    display: inline-block;
+    width: 100%;
+    height: 16px;
+    background-color: var(--cor-padrao);
+    transition: 100ms ease;
+    border-radius: 20px;
+}
+
+.barra {
+    border-radius: 20px;
+    height: 100%;
+    background-color: var(--cor-barra);
+}
+
+.nome-item {
+    font-weight: bolder;
+}
+
+footer {
+    color: whitesmoke;
+    background-color: rgb(0, 0, 0);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Raleway", sans-serif;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor-barra);
+    font-family: "Raleway", sans-serif;
+    padding: 2px;
+    transition: 200ms ease;
+}
+
+footer a:hover{
+    color: whitesmoke;
+}
+
+footer span {
+    margin-bottom: 6px;
+}
+
+.languages h3 {
+    margin-bottom: 6px;
+}
+
+.skills h3 {
+    margin-bottom: 6px;
+}
