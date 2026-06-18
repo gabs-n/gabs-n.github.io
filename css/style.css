@@ -49,11 +49,12 @@ main {
 .img-left h1 {
     position: absolute;
     bottom: 0;
-    color: #000000;
-    background-color: whitesmoke;
+    color: #ffffff;
+    background-color: #113557;
     width: 100%;
     display: flex;
     justify-content: center;
+    text-shadow: #252525 2px 2px 2px;
 }
 
 .profile, .skills, .languages {
