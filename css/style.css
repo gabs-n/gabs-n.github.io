@@ -13,7 +13,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     min-height: 100vh;
     background-color: var(--cor-padrao);
 }
@@ -26,13 +27,23 @@ main {
     font-family: "Raleway", sans-serif;
 }
 
-.left, .experience, .graduation{
+@media (max-width: 880px) {
+    main {
+        grid-template-columns: 1fr;
+        
+    }
+}
+
+.left,
+.experience,
+.graduation {
     background-color: var(--background-section);
     border-radius: 10px;
     overflow: hidden;
 }
 
-.experience, .graduation {
+.experience,
+.graduation {
     padding: 10px;
 }
 
@@ -57,12 +68,14 @@ main {
     text-shadow: #252525 2px 2px 2px;
 }
 
-.profile, .skills, .languages {
+.profile,
+.skills,
+.languages {
     padding: 16px;
     line-height: 20px;
 }
 
-.left{
+.left {
     box-shadow: 5px 5px 10px rgb(56, 56, 56);
 }
 
@@ -118,7 +131,7 @@ footer a {
     transition: 200ms ease;
 }
 
-footer a:hover{
+footer a:hover {
     color: whitesmoke;
 }
 
